@@ -17,4 +17,8 @@ describe('sum', () => {
         let result = sum('1', '3', '5')
         expect(result).toBe(9)
     })
+    it('should be ok with strings that are not numbers', () => {
+        let result = sum('1', '3', 'hello')
+        expect(result).toBe(4)
+    })
 })
