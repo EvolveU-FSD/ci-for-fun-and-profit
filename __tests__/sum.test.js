@@ -21,4 +21,13 @@ describe('sum', () => {
         let result = sum('1', '3', 'hello')
         expect(result).toBe(4)
     })
+    it('should be ok with null values', () => {
+        let result = sum('1', '3', null)
+        expect(result).toBe(4)
+    })
+    it('should be ok with undefined values', () => {
+        let result = sum('1', '3', undefined)
+        expect(result).toBe(4)
+    })
+
 })

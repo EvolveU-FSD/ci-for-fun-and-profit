@@ -8,10 +8,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-function getIntQueryParam(req, paramName) {
-  return parseInt(req.query[paramName] || '0')
-}
-
 app.get('/jsonTest', (req, res) => {
   try {
     let jsonText = req.query.object || '{}'
@@ -25,15 +21,10 @@ app.get('/jsonTest', (req, res) => {
 })
 
 app.get('/sum', (req, res) => {
-    let a = getIntQueryParam(req,'a')
-    let b = getIntQueryParam(req,'b')
-    let c = getIntQueryParam(req,'c')
-    let d = getIntQueryParam(req,'d')
-    let e = getIntQueryParam(req,'e')
-    let f = getIntQueryParam(req,'f')
+  let q = req.query
 
-    let result = sum(a,b,c,d,e,f)
-    res.send({ sum: result })
+  let result = sum(q.a, q.b, q.c, q.d, q.e, q.f)
+  res.send({ sum: result })
 })
 
 app.listen(port, () => {
