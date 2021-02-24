@@ -1,4 +1,4 @@
-[![CI Status](https://github.com/EvolveU-FSD/ci-for-fun-and-profit/workflows/cibuildandtest.js.yml/badge.svg)](https://github.com/EvolveU-FSD/ci-for-fun-and-profit/actions)
+[![CI Status](https://github.com/EvolveU-FSD/ci-for-fun-and-profit/actions/workflows/cibuildandtest.js.yml/badge.svg)](https://github.com/EvolveU-FSD/ci-for-fun-and-profit/actions)
 
 # ci-for-fun-and-profit
 
